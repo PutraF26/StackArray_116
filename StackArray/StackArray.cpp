@@ -14,18 +14,19 @@ public:
         top = -1;
     }
 
-    string push(string element) {
-        if (top == 4) { //step 1
-            cout << "Number of data execeeds the limit. " << endl;
-            return "";
-        }
+    void push() {
+        cout << "\nEnter a element: ";
+        int element;
+        cin >> element;
+       
+        
 
         top++; //step 2
         stack_array[top] = element; //step 3
         cout << endl;
         cout << element << "ditambahkan(pushed)" << endl;
 
-        return element;
+
     }
 
     void pop() {
@@ -69,10 +70,7 @@ int main() {
         cin >> ch;
             switch (ch) {
             case '1': {
-                cout << "\nEnter a element: ";
-                int element;
-                cin >> element;
-                s.push(element);
+                s.push();
                 break;
             }
             case '2':
