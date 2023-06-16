@@ -13,3 +13,8 @@ public:
     StackArray() {
         top = -1;
     }
+
+    void push() {
+        cout << "\nEnter a element: ";
+        int element;
+        cin >> element;
